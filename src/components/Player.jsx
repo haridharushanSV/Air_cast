@@ -57,8 +57,8 @@ export default function Player({ url, onBack }) {
   return (
     <div className="player-root">
       <div className="player-topbar">
-        <button onClick={onBack}>← Back</button>
-        <span className="live-badge">LIVE</span>
+        {/* <button onClick={onBack}>← Back</button>
+        <span className="live-badge">LIVE</span> */}
       </div>
 
       <div className="player-video-wrapper">

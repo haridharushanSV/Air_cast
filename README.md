@@ -1,16 +1,23 @@
-# React + Vite
+# Aircast
+## ⚠️ Disclaimer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Air Cast is an **open-source IPTV client application** developed for **educational and experimental purposes only**.
 
-Currently, two official plugins are available:
+This application **does not host, own, control, or distribute** any TV channels, media streams, or copyrighted content.  
+All live streams and channel information displayed in the app are fetched from **publicly available IPTV sources** (such as the iptv-org repository) and **third-party servers**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Important Notes:
+- The developer **is not responsible** for the content streamed through this application.
+- Availability, quality, and legality of streams **vary by country and region**.
+- Some streams may be **unreliable, geo-blocked, or temporarily unavailable**.
+- Users are solely responsible for ensuring that accessing and viewing IPTV streams **complies with their local laws and regulations**.
 
-## React Compiler
+By using this application, you acknowledge that:
+- You are watching content **at your own risk**
+- The developer **cannot be held liable** for any misuse, legal issues, or damages arising from the use of this app.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+If you are a **content owner** and believe that any stream infringes your rights, please contact the respective stream provider or repository.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Developed with ❤️ by Haridharushan**

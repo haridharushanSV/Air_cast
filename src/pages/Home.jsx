@@ -4,6 +4,7 @@ import ChannelCard from "../components/ChannelCard";
 import Player from "../components/Player";
 import Tabs from "../components/Tabs";
 import Disclaimer from "../components/Disclaimer";
+import logo from "../assets/logo.png";
 
 export default function Home() {
   const [channels, setChannels] = useState([]);
@@ -69,10 +70,14 @@ export default function Home() {
         <Disclaimer onClose={() => setShowDisclaimer(false)} />
       )}
 
-      <header className="app-header">
-        <img src="/logo.png" className="app-logo" />
-        <span className="app-title">Air Cast</span>
-      </header>
+<header className="app-header">
+      <img
+        src={logo}
+        className="app-logo"
+        alt="Air Cast Logo"
+      />
+      <span className="app-title">Air Cast</span>
+    </header>
 
       <input
         className="search"

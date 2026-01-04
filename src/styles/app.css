@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f6fa;
+}
+
+/* ---------- HEADER ---------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.app-logo {
+  width: 32px;
+  /* ✅ smaller logo */
+  height: 32px;
+  object-fit: contain;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ---------- SEARCH ---------- */
+.search {
+  width: calc(100% - 20px);
+  margin: 12px auto;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ---------- TABS ---------- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666;
+}
+
+.tabs button.active {
+  color: #000;
+  border-bottom: 2px solid #2979ff;
+  font-weight: 600;
+}
+
+/* ---------- CHANNEL GRID ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  padding: 10px;
+}
+
+/* ---------- DISCLAIMER ---------- */
+.disclaimer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.disclaimer-box {
+  background: white;
+  padding: 18px;
+  width: 300px;
+  margin: 20% auto;
+  border-radius: 12px;
+  position: relative;
+}
+
+.disclaimer-box h3 {
+  margin-top: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  align-items: center;
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-placeholder {
+  width: 48px;
+  height: 48px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category {
+  font-size: 12px;
+  color: #777;
+}
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.not-playable {
+  display: block;
+  font-size: 11px;
+  color: red;
+  margin-top: 4px;
+}
+/* FULL SCREEN ROOT */
+.player-root {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 9999;
+}
+
+/* CENTER VIDEO */
+.player-video-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  /* ✅ vertical center */
+  justify-content: center;
+  /* ✅ horizontal center */
+  background: black;
+}
+
+/* FORCE VIDEO SIZE */
+.player-video {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  /* 🔥 IMPORTANT */
+  background: black;
+}
+
+/* TOP BAR */
+.player-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0));
+  color: white;
+  z-index: 10;
+}
+
+.player-topbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.live-badge {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.player-root {
+  position: fixed;
+  inset: 0;
+  background: black;
+}
+
+.player-video-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
+}
+
+.player-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent);
+  z-index: 10;
+}
+.player-error {
+  color: white;
+  text-align: center;
+}
+
+.player-error button {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
